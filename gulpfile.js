@@ -8,7 +8,7 @@ let gulp = require('gulp'),/* это пищется для сокращенно�
     cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){/* эта функция конвертирует scss в css */
-   return gulp.src('app/scss/style.scss')/* выбираем фал с котором нужно что то сделать  */
+   return gulp.src('app/scss/**/*.scss')/* выбираем фал с котором нужно что то сделать  */
            .pipe(sass({outputStyle: 'compressed'}))/* сдесь все конферитруется */
            .pipe(rename({suffix : '.min'}))/* функция переименовывает в стаилмин */
            .pipe(autoprefixer({
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'))/* будут автоматически при изменинии в scss конвертировать в css */
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))/* будут автоматически при изменинии в scss конвертировать в css */
     gulp.watch('app/*.html', gulp.parallel('html'))/* будет следить за изменениями в нтмл */
     gulp.watch('app/js/*.js', gulp.parallel('js'))/* будет следить за изменениями в js */
 });

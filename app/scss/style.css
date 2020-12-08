@@ -34,12 +34,34 @@ li {
   /* центрируем  */
   padding: 0 15px; }
 
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+@media (max-width: 720px) {
+  /* задали для телефонов */
+  .container-fluid {
+    padding: 0 15px; } }
+.title {
+  text-align: center;
+  color: #263238;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 20px; }
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px; }
+
 @font-face {
   /* прописуем шрифты локально */
   font-family: 'Roboto-Regular', sans-serif;
   src: url("../fonts/Roboto-Regular.woof2") format("woof2"), url("../fonts/Roboto-Regular.woff") format("woof");
   font-weight: 400;
   font-display: swap; }
+/* start header */
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -83,6 +105,8 @@ li {
   color: #fff;
   font-size: 14px; }
 
+/* end header */
+/* srart search */
 .search {
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,5 +152,137 @@ li {
       background-color: transparent;
       right: 5px;
       top: 17px; }
+
+/* end search */
+/* start products */
+.products {
+  padding: 10px 0px;
+  background-color: #f4f6f5; }
+
+.products__inner-btn {
+  text-align: center;
+  margin-bottom: 60px; }
+  .products__inner-btn button {
+    padding: 12px 21px;
+    border: none;
+    background-color: #fff;
+    color: #263238;
+    cursor: pointer; }
+    .products__inner-btn button + bottom {
+      margin-left: 5px; }
+    .products__inner-btn button.mixitup-control-active {
+      background-color: #e74c3c;
+      color: #fff; }
+
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.product_item {
+  max-width: 280px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px; }
+  .product_item-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover; }
+  .product_item-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 14px;
+    align-items: center;
+    min-height: 60px;
+    font-weight: 500;
+    border-bottom: 1px solid #e7ecf2; }
+  .product_item-name {
+    min-width: 190px; }
+  .product_item-title {
+    color: #263238;
+    font-size: 18px;
+    display: block; }
+  .product_item-category {
+    font-size: 14px;
+    color: #e74c3c;
+    display: block; }
+  .product_item-price {
+    font-size: 20px;
+    color: #263238;
+    font-weight: 700; }
+  .product_item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    padding: 0px 12px; }
+  .product_item-author {
+    display: flex;
+    align-items: center;
+    min-width: 170px; }
+    .product_item-author .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px; }
+    .product_item-author span {
+      font-size: 14px;
+      font-weight: 500; }
+
+/* .products__bottom-btn{
+    text-align: center;
+    button{
+        margin: 30px 5px 0;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        padding: 20px 30px;
+        cursor: pointer;
+    }
+} */
+.container-fluid {
+  background-color: #f4f6f5; }
+
+.product_item-rec {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #f4f6f5; }
+
+.product_item-imgrec {
+  margin: 0 auto;
+  max-width: 737px;
+  min-height: 411px;
+  background-repeat: round;
+  display: block;
+  background-position: center;
+  background-size: cover; }
+
+.product-slider {
+  padding: 0px 0px 50px;
+  background-color: #f4f6f5; }
+  .product-slider .slick-dots {
+    text-align: center; }
+    .product-slider .slick-dots li {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px; }
+      .product-slider .slick-dots li.slick-active button {
+        background-color: #e74c3c; }
+      .product-slider .slick-dots li button {
+        border-radius: 50%;
+        background-color: #e8e8e8;
+        border: none;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        outline: none; }
 
 /*# sourceMappingURL=style.css.map */

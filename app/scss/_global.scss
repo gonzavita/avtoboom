@@ -7,6 +7,9 @@ html{
 *::after{
     box-sizing: inherit;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     display: inline-block;
     text-decoration: none;
@@ -51,4 +54,16 @@ li{
 .rate-star{
     display: inline-block;
     margin-right: 13px;
+}
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $red;
+        font-size: 14px;
+    }
 }

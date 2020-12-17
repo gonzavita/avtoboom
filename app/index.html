@@ -1,19 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
- 
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <a href="">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__text">
+                        <a href="#">
+                            <span>Need help?</span>
+                        </a>
+                        Talk to an expert:
+                        <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
+                    </div>
+                    <div class="header__box">
+                        <div class="notification__box header__btn-login--off">
+                            <a class="notification header__circle active icon-bell-o" href="#">
+                                <span>8</span>
+                            </a>
+                            <div class="circle__menu notification__menu">
+                                <a href="#" class="circle__item icon-bell-o icons-color">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-thema">Новинки</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="circle__item icon-bell-o">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-thema">Новинки</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="circle__item icon-bell-o">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-thema">Акции</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="message__box header__btn-login--off">
+                            <a class="message header__circle active icon-envelope-o" href="#">
+                                <span>5</span>
+                            </a>
+                            <div class="circle__menu message__menu">
+                                <a href="" class="circle__item icon-envelope-o icons-color">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-name">Администратор</div>
+                                        <div class="circle__info-thema">Помощь</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="circle__item icon-envelope-o">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-name">Менеджер</div>
+                                        <div class="circle__info-thema">Покупка</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                                <a href="" class="circle__item icon-mail-reply">
+                                    <img class="circle__images" src="images/content/messeng.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-name">Менеджер</div>
+                                        <div class="circle__info-thema">Доставка</div>
+                                        <div class="circle__info-date">12 Декабря 2020</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="basket__box">
+                            <a class="basket header__circle active icon-shopping-cart" href="#">
+                                <span>8</span>
+                            </a>
+                            <div class="circle__menu">
+                                <div class="circle__item">
+                                    <img class="circle__images" src="images/content/basket.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-name">ALFA Alfa 3833</div>
+                                        <div class="circle__info-thema">Охранные-системы</div>
+                                        <div class="circle__info-price">1350 р.</div>
+                                    </div>
+                                </div>
+                                <div class="circle__item">
+                                    <img class="circle__images" src="images/content/basket.jpg" alt="">
+                                    <div class="circle__info">
+                                        <div class="circle__info-name">ALFA Alfa 3833</div>
+                                        <div class="circle__info-thema">Охранные-системы</div>
+                                        <div class="circle__info-price">1350р.</div>
+                                    </div>
+                                </div>
+                                <div class="basket__summ">
+                                    <div class="basket__title">
+                                        <div class="basket__summ-total">Всего</div>
+                                        <div class="basket__summ-price">1350р.</div>
+                                    </div>
+                                    <a class="basket__btn" href="#">Корзина</a>
+                                    <a class="basket__btn basket__btn-checkout" href="#">Оформить Заказ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__box">
+                            <a class="user header__btn-login--off" href="#">
+                                <div class="user_inner">
+                                    <div class="user__images">
+                                        <img src="images/content/user.jpg" alt="">
+                                    </div>
+                                    <div class="user__info">
+                                        <div class="user__name">
+                                            Администратор
+                                        </div>
+                                        <div class="user__money">
+                                            240 Рублей
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="user__menu">
+                                <ul>
+                                    <li><a class="angle-right" href="#">Профиль</a></li>
+                                    <li><a class="angle-right" href="#">Кошелек</a></li>
+                                    <li><a class="angle-right" href="#">Заказы</a></li>
+                                    <li><a class="angle-right" href="#">Настройка</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                            href="javascript:;">Войти</a>
+                        <a class="header__btn header__btn-logout header__btn-login--off" href="#">Выйти</a>
+                        <a class="header__btn header__btn-register header__btn-login" href="#">Регистрация</a>
+                    </div>
+                    <div class="header__btn-menu icon-user"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <nav class="menu">
+                    <div class="menu__btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Товары
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                СТО
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Техосмотр
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ОСАГО
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Справка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="search" style="background-image: url(images/icons/search-bg.jpg);">
+        <!-- если нужно что то изменять из админки прописывается сюда инлайново -->
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__inner-title">
+                    Приветствую дорогой пользователь интернет магазана AvtoBoom
+                </div>
+                <div class="search__inner-text">
+                    Не смогли что то найти, воспользуйся глобальным поиском.
+                </div>
+                <div class="search__inner-form">
+                    <form>
+                        <input type="text" placeholder="Напишите, что вы хотите найти.....?" required>
+                        <button type="submit">
+                            <img src="images/icons/search.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container-fluid">
+            <div class="products__title title">
+                Категории товаров, хиты продаж, новинки товаров
+            </div>
+            <div class="products__inner">
+                <div class="products__inner-btn">
+                    <button type="button" data-filter="all">Все</button>
+                    <button type="button" data-filter=".category-новинки">Новинки</button>
+                    <button type="button" data-filter=".category-хиты-продаж">Хиты-продаж</button>
+                    <button type="button" data-filter=".category-охранные-системы">Охранные-системы</button>
+                    <button type="button" data-filter=".category-автоакустика">Автоакустика</button>
+                    <button type="button" data-filter=".category-шумоизоляция">Шумоизоляция</button>
+                </div>
+                <div class="products__inner-box">
+                    <div class="product_item mix category-новинки" data-order="1">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-хиты-продаж" data-order="2">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-хиты-продаж" data-order="3">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-охранные-системы" data-order="4">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-охранные-системы" data-order="4">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-автоакустика" data-order="5">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-автоакустика" data-order="6">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-шумоизоляция" data-order="7">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-шумоизоляция" data-order="8">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_item mix category-шумоизоляция" data-order="9">
+                        <a class="product_item-img" href="#"
+                            style="background-image: url(images/content/product-item.jpg);"></a>
+                        <div class="product_item-content">
+                            <div class="product_item-name">
+                                <a class="product_item-title" href="#">
+                                    ALFA Alfa 3833
+                                </a>
+                                <a class="product_item-category" href="#">
+                                    Охранные Системы
+                                </a>
+                            </div>
+                            <div class="product_item-price">
+                                1350 р.
+                            </div>
+                        </div>
+                        <div class="product_item-info">
+                            <a class="product_item-author" href="#">
+                                <div class="avatar" style="background-image: url(images/content/alfa.jpg);"></div>
+                                <span>Alfa</span>
+                            </a>
+                            <div class="product_item-star">
+                                <div class="rate-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="products__bottom-btn">
+            <button type="button" data-filter=".category-новинки">Новинки</button>
+            <button type="button" data-filter=".category-хиты продаж">Хиты продаж</button>
+        </div> -->
+        </div>
+    </section>
+    <section class="product-slider">
+        <div class="container-fluid">
+            <div class="product-slider__title title">
+                НОВОСТИ - "Акции" "Скидки" "Новинки" ваш реклама может быть сдесь!!!
+            </div>
+            <div class="product-slider__inner">
+                <div class="product_item-rec">
+                    <a class="product_item-imgrec" href="#" style="background-image: url(images/content/rec.jpg);"></a>
+                </div>
+                <div class="product_item-rec">
+                    <a class="product_item-imgrec" href="#" style="background-image: url(images/content/rec2.jpg);"></a>
+                </div>
+                <div class="product_item-rec">
+                    <a class="product_item-imgrec" href="#" style="background-image: url(images/content/rec3.jpg);"></a>
+                </div>
+                <div class="product_item-rec">
+                    <a class="product_item-imgrec" href="#" style="background-image: url(images/content/rec4.jpg);"></a>
+                </div>
+                <div class="product_item-rec">
+                    <a class="product_item-imgrec" href="#" style="background-image: url(images/content/rec5.jpg);"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col footer__col-adress">
+                        <div class="footer__col-title">Наши Контакты</div>
+                        <div class="footer__col-text">
+                            <p>Дистанционная продажа автоэлектроники,
+                                доставка по Старому Осколу. Безналичный расчет,
+                                электронная наличность, кредитные карты, оплата курьеру.</p>
+                            <span>Самовывоз из офиса не осуществляется!</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>г. Воронеж, Ленинский проспект 152Г</p>
+                            <p>г.Уфа, ул. М.Гражданская, 35А</p>
+                            <p>пгт. Пролетарский м-он Ватутина 7Б</p>
+                        </div>
+                        <a class="footer__info footer__info-phone" href="tel:+79040000000">
+                            <p>+7904 000 0000</p>
+                        </a>
+                    </div>
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title">Категории</div>
+                        <ul class="footer__col-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Товары</a></li>
+                            <li><a href="#">СТО</a></li>
+                            <li><a href="#">Техосмотр</a></li>
+                            <li><a href="#">ОСАГО</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title">Помощь</div>
+                        <ul class="footer__col-list">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Справка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-social">
+                        <div class="footer__col-title">Следите за нами в социальных сетях:</div>
+                        <ul class="footer__social-link">
+                            <li><a class="link-vk" href="#"></a></li>
+                            <li><a class="link-wocap" href="#"></a></li>
+                            <li><a class="link-mail" href="#"></a></li>
+                        </ul>
+                        <div class="footer__form">
+                            <div class="footer__form-title">
+                                Подпишись на рассылку новостей и будь вкрусе все событий!
+                            </div>
+                            <form>
+                                <input type="text" placeholder="E-mail Address">
+                                <button true="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy-text">
+                    © 2020 AvtoBoom. Первый в мире многофункциональный интернет магазин.
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!--   <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Войти
+            </div>
+            <form>
+                <label class="login__label-name">
+                    <input type="text" placeholder="Логин" required>
+                </label>
+                <label class="login__label-pass"> 
+                    <input type="text" placeholder="Пароль" required>
+                </label>
+                <button tupe="submit">Отправить</button>
+                <a class="creat-acc" href="#">Создать аккаунт?</a>
+                <a class="lost-pass" href="#">Восстановить пароль?</a>
+            </form>
+        </div>
+    </div> -->
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- подклюсаем джеквери -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- подклюсаем джеквери -->
     <script src="js/libs.min.js"></script><!-- сдесь будут храниться все плагины -->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
